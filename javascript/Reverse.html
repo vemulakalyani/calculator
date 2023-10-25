@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Reversal</title>
+    <script>
+        function reverseWordsInSentence() {
+            const inputSentence = document.getElementById("sentence").value;
+            const words = inputSentence.split(' ');
+            const reversedWords = words.map(word => {
+                return word.split('').reverse().join('');
+            });
+            const reversedSentence = reversedWords.join(' ');
+            document.getElementById("output").textContent = reversedSentence;
+        }
+    </script>
+</head>
+<body>
+    <h1>Word Reversal</h1>
+    <label for="sentence">Enter a sentence:</label>
+    <input type="text" id="sentence" placeholder="This is a sunny day">
+    <button onclick="reverseWordsInSentence()">Reverse</button>
+    <p id="output"></p>
+</body>
+</html>
+
+
+
+
+
