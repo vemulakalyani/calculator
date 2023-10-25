@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="survey.css"></linkrel>
+</head>
+<body>
+	<h1>Customer Survey Form</h1>
+	<form id="form">
+		<div class="form-control">
+			<label for="name" id="label-name">
+				First Name
+			</label>
+			<input type="text"
+				id="First name"
+				placeholder="Enter your First name" />
+                <label for="name" id="label-name">
+                    Last Name
+                 </label>
+                 <input type="text"
+                     id="Last name"
+                     placeholder="Enter your Last name" />
+		<div class="form-control">
+			<label for="Date of birth" id="age">
+				Date of birth
+			</label>
+			<input type="text"
+				id="age"
+				placeholder="Enter your Date of birth" />
+		</div>
+		<div class="form-control">
+			<label for="country" id="country" >
+				Select country
+			</label>
+		<select name="country" >
+			<option value="">select country</option>
+			<option value="india">India</option>
+			<option value="australia">Australia</option>
+			<option value="germany">Germany</option>
+			<option value="italy">Italy</option>
+			<option value="brazil">Brazil</option>
+		</select>
+	</div>
+		<div class="form-control">
+			<label for="Gender" id="Gender" >
+				Gender
+			</label>
+        <input type="checkbox" name="Gender" value="Male"/> Male  
+     <input type="checkbox" name="Gender" value="female"/>  Female 
+     <input type="checkbox" name="other"/>  other
+	</div>
+<div class="form-control">
+	<label for="profession" id="profession" >
+		profession
+	</label>
+	<input type="text" name=" " size="20"/> <br> 
+</div>
+        <div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+		<div class="form-control">
+			<label for="mobile number" id="mobile number" >
+				mobile number
+			</label>
+		 <input type="text" name="country code"  value="+91" size="2"/>   
+		  <input type="text" name="phone" size="10"/>
+		</div>
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+			
+			<script type="text/javascript" src="survey.js"></script>
+	</form>
+</body>
+</html>
